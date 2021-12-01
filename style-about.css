@@ -89,14 +89,14 @@ header .logo
 
 
 .image1-1-1{
-width: 30%;
-background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(0206.png);
+width: 20%;
 margin: 0px;
 background-position: center;
 background-size: cover;
-height: 30%;
-margin-top: 300px;
+height: 20%;
+margin-top: 320px;
 margin-left: 900px;
+clip-path:circle();
 }
 
 .dong1 {
@@ -132,10 +132,10 @@ margin-left: 900px;
 }
 .dong4 {
     box-sizing: border-box;
-	padding-left: 400px;
+	padding-left: 300px;
     margin-top: -400px;
     min-width: 0;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 5;
     font-family: mabry-regular-pro;
 }
@@ -487,9 +487,9 @@ circle{
 	fill: none;
 	stroke: url(#GradientColor);
 	stroke-width: 20px;
-	stroke-dasharray: 472;
-	stroke-dashoffset: 472;
-	animation: anim 2s linear forwards;
+	stroke-dasharray: 400;
+	stroke-dashoffset: 400;
+	animation: anim 7s linear forwards;
 }
 svg{
 	position: absolute;
@@ -529,10 +529,17 @@ svg{
   transform: scale(0.5) translateY(-15px);
 }
 
-body{
-	font-family:Biotif-Regular;
-	background: #eef8ff;
+.color-image1{
+	position: absolute;
+	margin-top:-400px;
+	margin-left: -150px;
+	background: #99ddcc;
+	height: 190%;
+	width: 100%;
+	z-index: -1;
+	transform: translateX(150px);
 }
+
 .footer{
 	font-family:Biotif-Regular;
 	width: 50%;
@@ -634,4 +641,3 @@ ul li a{
 	margin-top: 30px;
 	position: relative;
 }
-
