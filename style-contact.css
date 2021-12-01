@@ -1,0 +1,266 @@
+@font-face {
+	src: url(font/Bogart-Medium-trial.ttf);
+	font-family: Bogart-Medium-trial;
+}
+@font-face {
+	src: url(font/TAN-PEARL.ttf);
+	font-family: TAN-PEARL;
+}
+@font-face {
+	src: url(font/mabry-regular-pro.ttf);
+	font-family: mabry-regular-pro;
+}
+@font-face {
+	src: url(font/Biotif-Regular.ttf);
+	font-family:Biotif-Regular ;
+}
+
+ 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bogart-Medium-trial;
+}
+header
+{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  font-family: TAN-PEARL;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.showcase
+{
+  
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 2;
+  color: #fff;
+}
+
+
+.showcase ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	color: #fff;
+}
+.showcase ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.showcase ul li::after{
+	content: ' ';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+	
+}
+.showcase ul li:hover::after{
+	width: 100%;
+}
+
+
+
+.contact{
+    width: 1000px;
+    height: 900px;
+    position: absolute;
+    border-radius: 5px;
+    padding:200px 30px;
+	margin-top:150px;
+	margin-left: 300px;
+    left: 0px;
+	background-color: #f2f2f2;
+}
+  .contact{
+	  padding-top: 100px;
+	  padding-left:-300px;
+  }
+  .contact p{
+	  padding-left:300px;
+	  font-size: 50px;
+	  color: #000;
+  }
+ 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover 
+{
+    background-color: #45a049;
+	
+  }
+body{
+	background-color:linear-gradient(to right, #00093c, #2d0b00);
+}
+.footer{
+	font-family:Biotif-Regular;
+	width: 50%;
+	position: absolute;
+	color: #fff;
+	padding: 100px 0 30px;
+	border-top-left-radius: 125px;
+	font-size: 13px;
+	line-height: 20px;
+}
+footer{
+	font-family:Biotif-Regular;
+	margin-top: 0px;
+	margin-bottom: -200px;
+	padding-top: 1200px;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+}
+.row{
+	font-family:Biotif-Regular;
+	color: #fff;
+	width: 85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between; 
+}
+.col{
+	flex-basis: 25%;
+	padding: 60px;
+	font-family:Biotif-Regular;
+}
+.logo{
+	font-family:TAN-PEARL;
+	width: 80px;
+	margin-bottom: 30px;
+}
+.col h3{
+	color: #fff;
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+	font-family:Biotif-Regular;
+}
+p{
+	color: #fff;
+	width: fit-content;
+	margin-bottom: 20px;
+	position: relative;
+	font-family:Biotif-Regular;
+}
+.email-id{
+	width: fit-content;
+	border-bottom: 1px solid #ccc;
+	margin: 20px 0;
+	font-family:Biotif-Regular;
+}
+ul li{
+	list-style:none;
+	margin-bottom: 12px;
+}
+ul li a{
+	font-family:Biotif-Regular;
+	margin-top: 200px;
+	color: #fff;
+	text-decoration: none;
+}
+.col2{
+	
+	flex-basis: 25%;
+	padding: 60px;
+}
+.col2 form{
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+.col2 form input{
+	width: 100%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+.col2 h5{
+	color: #fff;
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
+}
+.social{
+	color: #fff;
+	width: fit-content;
+	margin-bottom: 80px;
+	margin-top: 30px;
+	position: relative;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+  
+  

@@ -1,0 +1,143 @@
+@font-face {
+	src: url(font/Bogart-Medium-trial.ttf);
+	font-family: Bogart-Medium-trial;
+}
+@font-face {
+	src: url(font/TAN-PEARL.ttf);
+	font-family: TAN-PEARL;
+}
+@font-face {
+	src: url(font/mabry-regular-pro.ttf);
+	font-family: mabry-regular-pro;
+}
+@font-face {
+	src: url(font/Biotif-Regular.ttf);
+	font-family:Biotif-Regular ;
+}
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bogart-Medium-trial;
+}
+header
+{
+ 
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  padding: 100px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  font-family: TAN-PEARL;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+.showcase ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.showcase ul li::after{
+	content: ' ';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.showcase ul li:hover::after{
+	width: 100%;
+}
+.text{
+	width: 900px;
+	margin-left: 200px;
+	padding-bottom: 200px;
+	margin-top: 200px;
+}
+.text h2
+{
+  font-family: TAN-PEARL;
+  font-size: 60px;
+  color: #fff;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-left: 300px;
+  min-width: 0;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+}
+
+.text1 {
+	color: #fff;
+    box-sizing: border-box;
+	margin-top: 40px;
+	margin-left: 250px;
+    min-width: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: mabry-regular-pro ;
+}
+
+.text2 {
+	color: #fff;
+    box-sizing: border-box;
+	margin-top: -25px;
+	margin-left: 480px;
+    min-width: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: mabry-regular-pro ;
+}
+
+.text3 {
+	color: #fff;
+    box-sizing: border-box;
+    margin: 0px;
+	margin-top: -25px;
+	margin-left: 680px;
+    min-width: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: mabry-regular-pro ;
+}
